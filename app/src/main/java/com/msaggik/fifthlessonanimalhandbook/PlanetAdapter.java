@@ -11,27 +11,27 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.ViewHolder> {
+public class PlanetAdapter extends RecyclerView.Adapter<PlanetAdapter.ViewHolder> {
 
 
     private final LayoutInflater inflater;
-    private final List<Animal> animals;
-    public AnimalAdapter(Context context, List<Animal> animals) {
+    private final List<Planet> animals;
+    public PlanetAdapter(Context context, List<Planet> animals) {
         this.inflater = LayoutInflater.from(context);
         this.animals = animals;
     }
 
 
     @Override
-    public AnimalAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public PlanetAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = inflater.inflate(R.layout.list_item, parent, false);
         return new ViewHolder(view);
     }
 
 
     @Override
-    public void onBindViewHolder(AnimalAdapter.ViewHolder holder, int position) {
-        Animal animal = animals.get(position);
+    public void onBindViewHolder(PlanetAdapter.ViewHolder holder, int position) {
+        Planet animal = animals.get(position);
         holder.animalView.setImageResource(animal.getAnimalResource());
         holder.nameView.setText(animal.getName());
         holder.animalDescriptionView.setText(animal.getAnimalDescription());

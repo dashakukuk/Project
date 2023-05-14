@@ -1,6 +1,6 @@
 package com.msaggik.fifthlessonanimalhandbook;
 
-public class Animal {
+public class Planet {
 
 
     private String name;
@@ -9,7 +9,7 @@ public class Animal {
     private String populationSize;
 
 
-    public Animal(String name, String animalDescription, int animalResource, String populationSize) {
+    public Planet(String name, String animalDescription, int animalResource, String populationSize) {
         this.name = name;
         this.animalDescription = animalDescription;
         this.animalResource = animalResource;
